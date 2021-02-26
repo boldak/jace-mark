@@ -67,4 +67,10 @@
 const hljs = require('highlight.js');
 hljs.registerLanguage("cypher", require('highlightjs-cypher'));
 
-module.exports = (code, lang) => ((lang) ? hljs.highlight(lang, code).value : "") 
+module.exports = (code, lang) => {
+	try {
+		 return ((lang) ? hljs.highlight(lang, code).value : "")
+	} catch (e) {
+		return ""
+	}	 
+}	 
