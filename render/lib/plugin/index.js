@@ -4,7 +4,7 @@ module.exports = options => ([
 	require('markdown-it-emoji'),
 	require('markdown-it-expand-tabs'),
 	require('markdown-it-task-lists'),
-	require('./heading-links'),
+	// require('./heading-links'),
 	require('./gfm/indented-headings'),
 	require('./gfm/relaxed-link-reference'),
 	require('./gravatar'),

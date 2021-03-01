@@ -1,4 +1,4 @@
-let md = require("./render")
+let md = require("../render")
 
 
 let data = `
