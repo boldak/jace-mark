@@ -60,6 +60,30 @@ MATCH (p1:Person {name: "Tom Hanks"}), (p2:Person {name: "Tom Cruise"}),
       path = shortestpath((p1)-[:KNOWS*]-(p2))
 RETURN path
 \`\`\`
+
+\`\`\`dps
+<?cypher
+MATCH (p1:Person {name: "Tom Hanks"}), (p2:Person {name: "Tom Cruise"}),
+      path = shortestpath((p1)-[:KNOWS*]-(p2))
+RETURN path
+?>
+set("request")
+<?text
+text
+?>
+<?html
+<div>
+</div>
+?>
+
+return(<? ($scope.response) ?>
+
+\`\`\`
+
+
+
+
+
 `
 
 console.log(md.render(data))
