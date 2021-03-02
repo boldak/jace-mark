@@ -69,6 +69,7 @@ hljs.registerLanguage("cypher", require('highlightjs-cypher'));
 hljs.registerLanguage("csv", require('./highlightjs/languages/csv'));
 hljs.registerLanguage("text", require('./highlightjs/languages/text'));
 hljs.registerLanguage("dps", require('./highlightjs/languages/dps'));
+hljs.registerLanguage("plantuml", require('./highlightjs/languages/plantuml'));
 
 
 module.exports = (code, lang) => {
